@@ -28,7 +28,7 @@ cursor.execute("""
 print("table create successfully.")
 
 insert_query = "INSERT INTO stud (firstname, lastname, mobile, email) VALUES (%s, %s, %s, %s)"
-Val = ("radhika", "sonagara", "1234567890", "radhika@example.com")
+Val = ("hasti", "nakum", "1234567890", "hasti@example.com")
 cursor.execute(insert_query, Val)
 
 conn.commit()
@@ -42,7 +42,7 @@ for row in rows:
     print(row)
 
 update_query = "UPDATE stud SET firstname = %s WHERE id = %s"
-Val= ("Radhika_updated", 1)
+Val= ("Hasti_updated", 1)
 cursor.execute(update_query, Val)
 
 conn.commit()
